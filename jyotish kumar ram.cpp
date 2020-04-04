@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 struct process
 {
  int processID;
@@ -49,6 +48,7 @@ void execute()
  }
  total--;
  }
+ //to sort the process again in by priority
  for(wait=0;wait<total;wait++)
  {
  for(j=0;j<total;j++)
@@ -142,7 +142,7 @@ int main()
  }
  printf("process in order of their completion:\n\n");
  printf(" execution table \n\n");
- printf(" PROCESS ID ARRIVAL TIME SERVICE TIME WAITING TIME\n");
+ printf(" PROCESS_ID ARRIVAL_TIME SERVICE_TIME WAITING_TIME\n");
  for(l=0;l<n;l++)
  {
  for(j=0;j<n;j++)
